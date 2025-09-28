@@ -7,23 +7,25 @@
   <style>
     body 
      {
-      margin: 0;
-      padding: 0;
-      background-image: url('https://image2url.com/images/1759046062871-28b1d807-dba0-472d-8b3f-9735611a5a9f.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 100vh;
-    }
+      body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://image2url.com/images/1759046062871-28b1d807-dba0-472d-8b3f-9735611a5a9f.png');
+  background-size: contain;         /* Ensures full logo is visible */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;           /* Fallback color for contrast */
+}
 
-    /* Optional: overlay content styling */
-    .content {
-      color: white;
-      text-align: center;
-      padding-top: 40vh;
-      font-size: 2em;
-      background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
-    }
+/* Optional: overlay content styling */
+.content {
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+}
 
     
     {
@@ -199,6 +201,7 @@
 
 </body>
 </html>
+
 
 
 
