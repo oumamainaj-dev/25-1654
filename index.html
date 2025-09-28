@@ -5,10 +5,10 @@
   <title>Proton Auto Dealers</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('https://via.placeholder.com/1600x900?text=Showroom+Background');
+      background-image: url('https://images.unsplash.com/photo-1605559424843-6c3b6f1e4f8c?auto=format&fit=crop&w=1600&q=80');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -16,7 +16,7 @@
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.75);
       color: white;
       padding: 20px;
       display: flex;
@@ -41,7 +41,7 @@
 
     main {
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.95);
     }
 
     section, article, aside {
@@ -54,6 +54,19 @@
 
     ul {
       list-style-type: square;
+    }
+
+    .car-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .car-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
 
     table {
@@ -76,19 +89,13 @@
       margin-bottom: 10px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
     video {
       display: block;
       margin: 20px auto;
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.85);
       color: white;
       text-align: center;
       padding: 15px;
@@ -124,81 +131,52 @@
     </section>
 
     <section>
-      <article>
-        <h2>Featured Vehicle</h2>
-        <img src="https://via.placeholder.com/600x300?text=BMW+X5+2023" alt="BMW X5 2023 - luxury SUV">
-        <p>The BMW X5 2023 offers premium comfort, advanced safety features, and powerful performance — ideal for both city and highway driving.</p>
-      </article>
+      <h2>Car Model Gallery</h2>
+      <div class="car-gallery">
+        <img src="https://www.netcarshow.com/Toyota/2023-Corolla_Sedan/2023-Toyota-Corolla_Sedan-01.jpg" alt="Toyota Corolla 2023">
+        <img src="https://www.netcarshow.com/Honda/2022-Civic/2022-Honda-Civic-01.jpg" alt="Honda Civic 2022">
+        <img src="https://www.netcarshow.com/BMW/2023-X5/2023-BMW-X5-01.jpg" alt="BMW X5 2023">
+        <img src="https://www.netcarshow.com/Land_Rover/2024-Range_Rover_Velar/2024-Land_Rover-Range_Rover_Velar-01.jpg" alt="Range Rover Velar 2024">
+        <img src="https://www.netcarshow.com/Land_Rover/2023-Discovery/2023-Land_Rover-Discovery-01.jpg" alt="Land Rover Discovery 2023">
+        <img src="https://www.netcarshow.com/Mercedes-Benz/2023-C-Class/2023-Mercedes-Benz-C-Class-01.jpg" alt="Mercedes C-Class 2023">
+        <img src="https://www.netcarshow.com/Isuzu/2022-D-Max/2022-Isuzu-D-Max-01.jpg" alt="Isuzu D-Max 2022">
+        <img src="https://www.netcarshow.com/Mazda/2023-CX-5/2023-Mazda-CX-5-01.jpg" alt="Mazda CX-5 2023">
+      </div>
+    </section>
 
-      <aside>
-        <h2>Available Car Models</h2>
-        <table style="border: 2px solid #444;">
-          <caption>Our Multi-Brand Inventory</caption>
-          <tr>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th>Price</th>
-            <th>Rating</th>
-          </tr>
-          <tr>
-            <td>Toyota</td>
-            <td>Corolla</td>
-            <td>2023</td>
-            <td>$19,500</td>
-            <td>★★★★☆</td>
-          </tr>
-          <tr>
-            <td>Honda</td>
-            <td>Civic</td>
-            <td>2022</td>
-            <td>$21,000</td>
-            <td>★★★★☆</td>
-          </tr>
-          <tr>
-            <td>BMW</td>
-            <td>X5</td>
-            <td>2023</td>
-            <td>$58,000</td>
-            <td>★★★★★</td>
-          </tr>
-          <tr>
-            <td>Range Rover</td>
-            <td>Velar</td>
-            <td>2024</td>
-            <td>$65,000</td>
-            <td>★★★★★</td>
-          </tr>
-          <tr>
-            <td>Land Rover</td>
-            <td>Discovery</td>
-            <td>2023</td>
-            <td>$55,000</td>
-            <td>★★★★☆</td>
-          </tr>
-          <tr>
-            <td>Mercedes</td>
-            <td>C-Class</td>
-            <td>2023</td>
-            <td>$50,000</td>
-            <td>★★★★★</td>
-          </tr>
-          <tr>
-            <td>Isuzu</td>
-            <td>D-Max</td>
-            <td>2022</td>
-            <td>$30,000</td>
-            <td>★★★★☆</td>
-          </tr>
-          <tr>
-            <td>Mazda</td>
-            <td>CX-5</td>
-            <td>2023</td>
-            <td>$28,000</td>
-            <td>★★★★☆</td>
-          </tr>
-        </table>
-      </aside>
+    <section>
+      <h2>Product Showcase</h2>
+      <table style="border: 2px solid #444;">
+        <caption>Top Picks This Month</caption>
+        <tr>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Year</th>
+          <th>Price</th>
+          <th>Rating</th>
+        </tr>
+        <tr>
+          <td>Toyota</td>
+          <td>Corolla</td>
+          <td>2023</td>
+          <td>$19,500</td>
+          <td>★★★★☆</td>
+        </tr>
+        <tr>
+          <td>BMW</td>
+          <td>X5</td>
+          <td>2023</td>
+          <td>$58,000</td>
+          <td>★★★★★</td>
+        </tr>
+        <tr>
+          <td>Mercedes</td>
+          <td>C-Class</td>
+          <td>2023</td>
+          <td>$50,000</td>
+          <td>★★★★★</td>
+        </tr>
+      </table>
     </section>
 
     <section>
@@ -215,6 +193,7 @@
 
 </body>
 </html>
+
 
 
 
