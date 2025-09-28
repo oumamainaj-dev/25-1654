@@ -1,78 +1,185 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-<title>Tesco Auto Hub</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Tesco Auto Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1605559424843-6c3b6f1e4f8c?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #FF7F50;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
 <body>
-  <Header>
-  <h1>Tesco Dealers</h1>
+
+  <header>
+    <h1>Tesco Dealers</h1>
     <nav>
-      <a> href="#">home</a>
-      <a> href="#">Inventory</a>
-      <a> href="#">Lease Options</a>
-      <a> href="#">About Us</a>
-      <a> href="#">https://oumamainaj-dev.github.io/25-1654/</a>
+      <a href="#">Home</a>
+      <a href="#">Inventory</a>
+      <a href="#">Lease Options</a>
+      <a href="#">About Us</a>
+      <a href="https://oumamainaj-dev.github.io/25-1654/" target="_blank">GitHub</a>
     </nav>
-  </Header>
+  </header>
+
   <main>
     <section>
       <article>
-  <p> Welcome to Tesco Auto Hub, your trusted for new, used and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options and expert support to help you drive away with confindence</p>
-  <h2>Our services</h2>
-  <ul>
-    <li>New Car Models</li>
-    <li>Certified Used Vehicles</li>
-    <li>Flexible leasing Plans</li>
-    <li>Financing and Insurance Assistance</li>
-    <li>Trade-in and appraisal services</li>
-  </ul>
+        <p>Welcome to Tesco Auto Hub, your trusted source for new, used, and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options, and expert support to help you drive away with confidence.</p>
+        <h2>Our Services</h2>
+        <ul>
+          <li>New Car Models</li>
+          <li>Certified Used Vehicles</li>
+          <li>Flexible Leasing Plans</li>
+          <li>Financing and Insurance Assistance</li>
+          <li>Trade-in and Appraisal Services</li>
+        </ul>
       </article>
+
       <aside>
         <h3>Featured Vehicle</h3>
-        <img src="https://tse2.mm.bing.net/th/id/OIP.Hq-p5D-6Cf9A3aPaw4peRAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3/420*280" alt="BMW X5 - A sleek design and a Spacious interior">
-        <p>The BMW X5 is a Midsize luxury crossover that offers safety, practicality, comfort and value for money </p>  
+        <img src="https://tse2.mm.bing.net/th/id/OIP.Hq-p5D-6Cf9A3aPaw4peRAHaE8?rs=1&pid=ImgDetMain" alt="BMW X5 - A sleek design and a spacious interior" width="420" height="280">
+        <p>The BMW X5 is a midsize luxury crossover that offers safety, practicality, comfort, and value for money.</p>
       </aside>
     </section>
+
     <section>
       <h2>Vehicles Showcase</h2>
-      <table> style="border: 2px solid #FF7F50;">
-        <Caption>Top vehicle Picks</Caption>
+      <table>
+        <caption>Top Vehicle Picks</caption>
         <tr>
           <th>Vehicle Model</th>
           <th>Pricing</th>
           <th>Year of Manufacture</th>
           <th>Safety Ratings</th>
         </tr>
-<tr>
-  <td>BMW X5</td>
-  <td>$67000</td>
-  <td>2023</td>
-  <td>★★★★★</td>
-</tr>
-<tr>
-  <td>Toyota RAV4</td>
-  <td>$35000</td>
-  <td>2025</td>
-  <td>★★★★☆
-</td>
-</tr>
+        <tr>
+          <td>BMW X5</td>
+          <td>$67,000</td>
+          <td>2023</td>
+          <td>★★★★★</td>
+        </tr>
+        <tr>
+          <td>Toyota RAV4</td>
+          <td>$35,000</td>
+          <td>2025</td>
+          <td>★★★★☆</td>
+        </tr>
         <tr>
           <td>Nissan Patrol</td>
-          <td>$89000</td>
+          <td>$89,000</td>
           <td>2021</td>
           <td>★★★★★</td>
         </tr>
-      
       </table>
     </section>
+
+    <section>
+      <h2>Buying Versus Leasing a Car</h2>
+      <p>This video explains the differences between buying, leasing, and financing a vehicle. It covers pros and cons, cost comparisons, and tips to help you choose the best option for your lifestyle and budget.</p>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="500" controls poster="https://via.placeholder.com/500x280?text=Car+Buying+Tutorial"></video>
+    </section>
   </main>
-  <title>Car Buying Tutorial</title>
-  <h2>Buying Versus Leasing a Car</h2>
-  <p>This Video Explains the differences between buying, leasing, and financing a vehicle. It covers pros and cons, cost comparisons, and tips to help you choose the best option for your lifestyle and budget.</p>
-  <video>src"https://vvrl.cc/tb10d5"video>
+
+  <footer>
+    <p>Contact us: info@tescoautohub.com | +254 712 345678</p>
+    <p>&copy; 2025 Tesco Auto Hub. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
+
+
 
 
 
