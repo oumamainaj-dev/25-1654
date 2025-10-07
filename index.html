@@ -1,34 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Tesco Auto Dealers</title>
   <style>
-     html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  background-image: url('https://image2url.com/images/1759046062871-28b1d807-dba0-472d-8b3f-9735611a5a9f.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #000; 
-}
-
-    
-    {
+    html, body {
       margin: 0;
-      font-family: "Times New Roman",Times, sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1605559424843-6c3b6f1e4f8c?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-attachment: fixed;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
       background-repeat: no-repeat;
-      color: #222;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #000; 
     }
 
     header {
@@ -113,6 +100,128 @@ body {
         margin-top: 10px;
       }
     }
+
+    h1 {
+        color: red;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .highlight {
+        font-weight: bold;
+        background-color: yellow;
+        font-size: 20px;
+    }
+
+    .box-model-div {
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid black;
+        width: 200px;
+        height: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .transition-button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+
+    .transition-button:hover {
+        background-color: green;
+    }
+
+    .relative-parent {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        border: 2px dashed gray;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .relative-child {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: lightcoral;
+        padding: 5px;
+        border: 1px solid red;
+    }
+
+    .absolute-child {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: lightgreen;
+        padding: 5px;
+        border: 1px solid green;
+    }
+
+    .css-units-container {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .font-px {
+        font-size: 18px;
+    }
+
+    .font-em {
+        font-size: 1.2em;
+    }
+
+    .font-rem {
+        font-size: 1.2rem;
+    }
+
+    .layout-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        border: 1px solid purple;
+        padding: 10px;
+    }
+
+    .layout-item {
+        width: 45%;
+        padding: 15px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .color-rgb {
+        color: rgb(255,0,0);
+    }
+
+    .color-hex {
+        color: #00ff00;
+    }
+
+    .color-hsl {
+        color: hsl(240, 100%, 50%);
+    }
   </style>
 </head>
 <body>
@@ -186,13 +295,18 @@ body {
       <p>This video explains the differences between buying, leasing, and financing a vehicle. It covers pros and cons, cost comparisons, and tips to help you choose the best option for your lifestyle and budget.</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EiPZ1ghgoNc?si=_f66s5pwv4I_Q7eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
+
+
+
   </main>
 
   <footer>
     
   <p>
-  Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a><br>
-  Phone: +254 711 610 299 / +254 700 200 200<br>
+  Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a>  
+
+  Phone: +254 711 610 299 / +254 700 200 200  
+
   Email: <a href="mailto:info@tescoautodealers.ac.ke" style="color: red; text-decoration: none;">info@tescoautodealers.ac.ke</a>
 </p>
     <p>&copy; 2025 Tesco Auto Dealers. All rights reserved.</p>
@@ -218,11 +332,7 @@ body {
     <label for="amount" class="fa interest"></label>
   </p>
   <p>
-    <input type="text" id="down" placeholder="Down Payment">
-    <label for="amount" class="fa fa-arrow-down"></label>
-  </p>
-  <p>
-    <button class="btn" onclick="myFunction()">Calculate</button>
+    <button class="btn" onclick="myFunction( )">Calculate</button>
   </p>
   <p id="output">Monthly Payment</p>
 </div>
@@ -231,72 +341,5 @@ body {
 </body>
 </html>
 
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
