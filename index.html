@@ -86,30 +86,32 @@
       border-bottom: 1px solid #ddd;
     }
 
+    /* Product Table Styles (Table 1-like) */
     .product-table thead {
-      background-color: #444;
+      background-color: #333;
       color: #fff;
     }
 
     .product-table tbody tr:nth-child(even) {
-      background-color: #e0f7fa;
+      background-color: #d9edf7;
     }
 
     .product-table tbody tr:nth-child(odd) {
-      background-color: #b2ebf2;
+      background-color: #bce8f1;
     }
 
+    /* Farm Table Styles (Table 2-like) */
     .farm-table thead {
-      background-color: #2e7d32;
+      background-color: #388e3c;
       color: #fff;
     }
 
     .farm-table tbody tr:nth-child(even) {
-      background-color: #c8e6c9;
+      background-color: #dcedc8;
     }
 
     .farm-table tbody tr:nth-child(odd) {
-      background-color: #a5d6a7;
+      background-color: #c5e1a5;
     }
 
     iframe {
@@ -256,9 +258,10 @@
 
     <div class="calc">
       <h2>Monthly Car Payments Calculator</h2>
-            <p><input type="text" id="amount" placeholder="Monthly Amount"></p>
-      <p><input type="text" id="months" placeholder="Months"></p>
+      <p><input type="text" id="amount" placeholder="Loan Amount (KES)"></p>
+      <p><input type="text" id="months" placeholder="Additional Months"></p>
       <p><input type="text" id="years" placeholder="Years"></p>
+      <p><input type="text"
       <p><input type="text" id="interest" placeholder="Interest Rate (%)"></p>
       <p><button class="btn" onclick="calculatePayment()">Calculate</button></p>
       <p id="output">Monthly Payment: --</p>
@@ -286,4 +289,3 @@
 
 </body>
 </html>
-
