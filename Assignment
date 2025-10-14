@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <style>
+<body>
     html, body {
       margin: 0;
       padding: 0;
@@ -100,5 +101,5 @@
     }
 </style>
 </head>
-<body>
+</body>
 </html>
