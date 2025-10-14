@@ -8,6 +8,8 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
 
     body {
@@ -16,11 +18,10 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      background-color: #000; 
     }
 
     header {
-      background-color:RGB(253, 218, 13);
+      background-color: rgb(253, 218, 13);
       color: white;
       padding: 20px;
       display: flex;
@@ -31,6 +32,8 @@
 
     header h1 {
       margin: 0;
+      color: red;
+      text-align: center;
     }
 
     nav a {
@@ -45,7 +48,7 @@
     }
 
     main {
-      background-color: rgba(250, 249, 246);
+      background-color: rgba(250, 249, 246, 0.95);
       padding: 20px;
     }
 
@@ -57,61 +60,11 @@
       max-width: 100%;
       border-radius: 8px;
     }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
-}
 
-h2 {
-  color: #333;
-  margin-top: 40px;
-}
-
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-}
-
-thead {
-  background-color: #444;
-  color: #fff;
-}
-
-.product-table tbody tr:nth-child(even) {
-  background-color: #e0f7fa;
-}
-
-.product-table tbody tr:nth-child(odd) {
-  background-color: #b2ebf2;
-}
-
-.farm-table thead {
-  background-color: #2e7d32;
-}
-
-.farm-table tbody tr:nth-child(even) {
-  background-color: #c8e6c9;
-}
-
-.farm-table tbody tr:nth-child(odd) {
-  background-color: #a5d6a7;
-}
-
-table th {
-  border-bottom: 2px solid #ddd;
-}
-
-table td {
-  border-bottom: 1px solid #ddd;
-}
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
 
     table {
       width: 80%;
@@ -120,77 +73,46 @@ table td {
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    table, th, td {
-      padding:12px 15px;
-      text-align:left;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-h2 {
-  color: #333;
-  margin-top: 40px;
-}
-
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-}
-
-thead {
-  background-color: #444;
-  color: #fff;
-}
-
-.product-table tbody tr:nth-child(even) {
-  background-color: #e0f7fa;
-}
-
-.product-table tbody tr:nth-child(odd) {
-  background-color: #b2ebf2;
-}
-
-.farm-table thead {
-  background-color: #2e7d32;
-}
-
-.farm-table tbody tr:nth-child(even) {
-  background-color: #c8e6c9;
-}
-
-.farm-table tbody tr:nth-child(odd) {
-  background-color: #a5d6a7;
-}
-
-table th {
-  border-bottom: 2px solid #ddd;
-}
-
-table td {
-  border-bottom: 1px solid #ddd;
-}
-
     caption {
       font-weight: bold;
       margin-bottom: 10px;
+      text-align: left;
+      font-size: 1.1em;
     }
 
-    video {
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .product-table thead {
+      background-color: #444;
+      color: #fff;
+    }
+
+    .product-table tbody tr:nth-child(even) {
+      background-color: #e0f7fa;
+    }
+
+    .product-table tbody tr:nth-child(odd) {
+      background-color: #b2ebf2;
+    }
+
+    .farm-table thead {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+
+    .farm-table tbody tr:nth-child(even) {
+      background-color: #c8e6c9;
+    }
+
+    .farm-table tbody tr:nth-child(odd) {
+      background-color: #a5d6a7;
+    }
+
+    iframe {
       display: block;
       margin: 20px auto;
       border-radius: 8px;
@@ -203,6 +125,29 @@ table td {
       padding: 15px;
     }
 
+    .calc {
+      margin-top: 20px;
+    }
+
+    .calc input {
+      padding: 8px;
+      margin: 5px;
+      width: 200px;
+    }
+
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+
+    .btn:hover {
+      background-color: green;
+    }
+
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -212,128 +157,10 @@ table td {
       nav {
         margin-top: 10px;
       }
-    }
 
-    h1 {
-        color: red;
-        text-align: center;
-        font-family: Arial, sans-serif;
-    }
-
-    .highlight {
-        font-weight: bold;
-        background-color: yellow;
-        font-size: 20px;
-    }
-
-    .box-model-div {
-        margin: 20px;
-        padding: 10px;
-        border: 2px solid black;
-        width: 200px;
-        height: 100px;
-    }
-
-    @media screen and (max-width: 600px) {
-        body {
-            background-color: lightblue;
-        }
-    }
-
-    .banner {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-    .transition-button {
-        background-color: blue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.5s ease;
-    }
-
-    .transition-button:hover {
-        background-color: green;
-    }
-
-    .relative-parent {
-        position: relative;
-        width: 300px;
-        height: 150px;
-        border: 2px dashed gray;
-        margin-top: 30px;
-        padding: 10px;
-    }
-
-    .relative-child {
-        position: relative;
-        top: 20px;
-        left: 20px;
-        background-color: lightcoral;
-        padding: 5px;
-        border: 1px solid red;
-    }
-
-    .absolute-child {
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        background-color: lightgreen;
-        padding: 5px;
-        border: 1px solid green;
-    }
-
-    .css-units-container {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .font-px {
-        font-size: 18px;
-    }
-
-    .font-em {
-        font-size: 1.2em;
-    }
-
-    .font-rem {
-        font-size: 1.2rem;
-    }
-
-    .layout-container {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        border: 1px solid purple;
-        padding: 10px;
-    }
-
-    .layout-item {
-        width: 45%;
-        padding: 15px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        text-align: center;
-    }
-
-    .color-rgb {
-        color: rgb(255,0,0);
-    }
-
-    .color-hex {
-        color: #00ff00;
-    }
-
-    .color-hsl {
-        color: hsl(240, 100%, 50%);
+      body {
+        background-color: lightblue;
+      }
     }
   </style>
 </head>
@@ -373,130 +200,89 @@ table td {
     </section>
 
     <section>
-      <h2>Product table</h2>
-      <table>
+      <h2>Product Table</h2>
+      <table class="product-table">
         <caption>Product Table</caption>
-        <tr>
-          <th>Product</th>
-          <th>Price (KES)</th>
-          <th>Quantity</th>
-          <th>Total (KES)</th>
-        </tr>
-        <tr>
-          <td>Apples</td>
-          <td>20</td>
-          <td>10</td>
-          <td>200</td>
-        </tr>
-        <tr>
-          <td>Oranges</td>
-          <td>60</td>
-          <td>8</td>
-          <td>480</td>
-        </tr>
-        <tr>
-          <td>Bananas</td>
-          <td>30</td>
-          <td>12</td>
-          <td>360</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price (KES)</th>
+            <th>Quantity</th>
+            <th>Total (KES)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Apples</td><td>20</td><td>10</td><td>200</td></tr>
+          <tr><td>Oranges</td><td>60</td><td>8</td><td>480</td></tr>
+          <tr><td>Bananas</td><td>30</td><td>12</td><td>360</td></tr>
+        </tbody>
       </table>
     </section>
-<h2>Table 2:Farm Location and Products</h2>
- <table>
-   <thread>
-     <tr>
-       <th>Farm</th>
-       <th>Location</th>
-       <th>Contacts</th>
-       <th>Products</th>
-     </tr>
-   </thread>
-   <tbody>
-     <tr>
-       <td>Marks</td>
-       <td>Murang'a</td>
-       <td>0723456789</td>
-       <td>Mangos</td>
-     </tr>
-     <tr>
-       <td>James</td>
-       <td>Machakos</td>
-       <td>0721657644</td>
-       <td>Oranges</td>
-     </tr>
-     <tr>
-       <td>Marys</td>
-       <td>Kisii</td>
-       <td>0721123456</td>
-       <td>Avocado</td>
-     </tr>
-   </tbody>
- </table>   
+
+    <section>
+      <h2>Farm Location and Products</h2>
+      <table class="farm-table">
+        <caption>Farm Table</caption>
+        <thead>
+          <tr>
+            <th>Farm</th>
+            <th>Location</th>
+            <th>Contacts</th>
+            <th>Products</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Marks</td><td>Murang'a</td><td>0723456789</td><td>Mangos</td></tr>
+          <tr><td>James</td><td>Machakos</td><td>0721657644</td><td>Oranges</td></tr>
+          <tr><td>Marys</td><td>Kisii</td><td>0721123456</td><td>Avocado</td></tr>
+        </tbody>
+      </table>
+    </section>
+
     <section>
       <h2>Buying Versus Leasing a Car</h2>
       <p>This video explains the differences between buying, leasing, and financing a vehicle. It covers pros and cons, cost comparisons, and tips to help you choose the best option for your lifestyle and budget.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/EiPZ1ghgoNc?si=_f66s5pwv4I_Q7eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EiPZ1ghgoNc?si=_f66s5pwv4I_Q7eH" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </section>
-
-
-
   </main>
 
   <footer>
-    
-  <p>
-    <br>
-  Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a>  
-
- <br> Phone: +254 711 610 299 / +254 700 200 200 </br>
-
-  Email: <a href="mailto:info@tescoautodealers.ac.ke" style="color: red; text-decoration: none;">info@tescoautodealers.ac.ke</a>
-</p>
-  </br>
+    <p>
+      Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a><br>
+      Phone: +254 711 610 299 / +254 700 200 200<br>
+      Email: <a href="mailto:info@tescoautodealers.ac.ke" style="color: red; text-decoration: none;">info@tescoautodealers.ac.ke</a>
+    </p>
     <p>&copy; 2025 Tesco Auto Dealers. All rights reserved.</p>
-    <div class="calc">
-  <div class="header">
 
-  </div>
-  <h1>Monthly Car Payments Calculator</h1>
-  <p>
-    <input type="text" id="amount" name="amount" placeholder="Monthly Amount">
-    <label for="amount" class="fa fa-usd"></label>
-  </p>
-  <p>
-    <input type="text" id="months" placeholder="Months">
-    <label for="amount" class="fa fa-calendar"></label>
-  </p>
-  <p>
-    <input type="text" id="years" placeholder="Years">
-    <label for="amount" class="fa fa-calendar"></label>
-  </p>
-  <p>
-    <input type="text" id="interest" placeholder="Interest Rate">
-    <label for="amount" class="fa interest"></label>
-  </p>
-  <p>
-    <button class="btn" onclick="myFunction( )">Calculate</button>
-  </p>
-  <p id="output">Monthly Payment</p>
-</div>
+        <div class="calc">
+      <h2>Monthly Car Payments Calculator</h2>
+      <p><input type="text" id="amount" placeholder="Monthly Amount"></p>
+      <p><input type="text" id="months" placeholder="Months"></p>
+      <p><input type="text" id="years" placeholder="Years"></p>
+      <p><input type="text" id="interest" placeholder="Interest Rate (%)"></p>
+      <p><button class="btn" onclick="calculatePayment()">Calculate</button></p>
+      <p id="output">Monthly Payment: --</p>
+    </div>
+
+    <script>
+      function calculatePayment() {
+        const amount = parseFloat(document.getElementById("amount").value);
+        const months = parseFloat(document.getElementById("months").value);
+        const years = parseFloat(document.getElementById("years").value);
+        const interest = parseFloat(document.getElementById("interest").value) / 100;
+
+        const totalMonths = months + (years * 12);
+        if (isNaN(amount) || isNaN(totalMonths) || isNaN(interest)) {
+          document.getElementById("output").innerText = "Please enter valid numbers.";
+          return;
+        }
+
+        const monthlyRate = interest / 12;
+        const payment = (amount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -totalMonths));
+        document.getElementById("output").innerText = `Monthly Payment: KES ${payment.toFixed(2)}`;
+      }
+    </script>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
