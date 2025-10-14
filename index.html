@@ -71,6 +71,7 @@
       border-collapse: collapse;
       margin-bottom: 30px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid #000; 
     }
 
     caption {
@@ -83,35 +84,71 @@
     th, td {
       padding: 12px 15px;
       text-align: left;
-      border-bottom: 1px solid #ddd;
+
     }
 
-    /* Product Table Styles (Table 1-like) */
+    .product-table {
+      border: none; 
+    }
+
     .product-table thead {
-      background-color: #333;
-      color: #fff;
+      background-color: #6a799c; 
+      color: #ff9933; 
     }
 
-    .product-table tbody tr:nth-child(even) {
-      background-color: #d9edf7;
+    .product-table th {
+      border: none; 
     }
 
-    .product-table tbody tr:nth-child(odd) {
-      background-color: #bce8f1;
+    .product-table tbody tr:nth-child(1) {
+      background-color: #e6f0ff; 
     }
 
-    /* Farm Table Styles (Table 2-like) */
+    .product-table tbody tr:nth-child(2) {
+      background-color: #00cccc; 
+    }
+
+    .product-table tbody tr:nth-child(3) {
+      background-color: #336699; 
+      color: white; 
+    }
+
+    .product-table td {
+      border: none; 
+    }
+
+    .farm-table {
+      border: 1px solid #00cccc; 
+    }
+
     .farm-table thead {
-      background-color: #388e3c;
-      color: #fff;
+      background-color: #006699; 
+      color: white;
     }
 
-    .farm-table tbody tr:nth-child(even) {
-      background-color: #dcedc8;
+    .farm-table th {
+      border: none; 
     }
 
     .farm-table tbody tr:nth-child(odd) {
-      background-color: #c5e1a5;
+      background-color: #e6f0ff; 
+    }
+
+    .farm-table tbody tr:nth-child(even) {
+      background-color: #cce0ff; 
+    }
+
+    .farm-table td {
+      border-right: 1px solid #00cccc; 
+      border-bottom: 1px solid #00cccc; 
+    }
+
+    .farm-table tbody tr:last-child td {
+      border-bottom: none; 
+    }
+
+    .farm-table td:last-child {
+      border-right: none; 
     }
 
     iframe {
@@ -202,27 +239,27 @@
     </section>
 
     <section>
-      <h2>Product Table</h2>
+      <h2>Table 1</h2>
       <table class="product-table">
         <caption>Product Table</caption>
         <thead>
           <tr>
             <th>Product</th>
-            <th>Price (KES)</th>
+            <th>Price</th>
             <th>Quantity</th>
-            <th>Total (KES)</th>
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Apples</td><td>20</td><td>10</td><td>200</td></tr>
-          <tr><td>Oranges</td><td>60</td><td>8</td><td>480</td></tr>
-          <tr><td>Bananas</td><td>30</td><td>12</td><td>360</td></tr>
+          <tr><td>Apples</td><td>KES 20</td><td>10</td><td>KES 200</td></tr>
+          <tr><td>Oranges</td><td>KES 60</td><td>8</td><td>KES 480</td></tr>
+          <tr><td>Bananas</td><td>30</td><td>12</td><td>KES 360</td></tr>
         </tbody>
       </table>
     </section>
 
     <section>
-      <h2>Farm Location and Products</h2>
+      <h2>Table 2</h2>
       <table class="farm-table">
         <caption>Farm Table</caption>
         <thead>
@@ -234,9 +271,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Marks</td><td>Murang'a</td><td>0723456789</td><td>Mangos</td></tr>
-          <tr><td>James</td><td>Machakos</td><td>0721657644</td><td>Oranges</td></tr>
-          <tr><td>Marys</td><td>Kisii</td><td>0721123456</td><td>Avocado</td></tr>
+          <tr><td>Marks</td><td>Muranga</td><td>0723456789</td><td>Mamgos</td></tr>
+          <tr><td>James</td><td>Machakos</td><td>0721567654</td><td>Oranges</td></tr>
+          <tr><td>Marys</td><td>Kisii</td><td>0727123456</td><td>Ovacado</td></tr>
         </tbody>
       </table>
     </section>
@@ -261,7 +298,6 @@
       <p><input type="text" id="amount" placeholder="Loan Amount (KES)"></p>
       <p><input type="text" id="months" placeholder="Additional Months"></p>
       <p><input type="text" id="years" placeholder="Years"></p>
-      <p><input type="text"
       <p><input type="text" id="interest" placeholder="Interest Rate (%)"></p>
       <p><button class="btn" onclick="calculatePayment()">Calculate</button></p>
       <p id="output">Monthly Payment: --</p>
