@@ -22,116 +22,116 @@ th, td {
       border: none; 
     }
 .product-table thead {
-      background-color: #1A237E; /* Deep Indigo Header Background */
-      color: #FFFF00; /* Unique Header Text Color: Yellow */
+      background-color: #1A237E;
+      color: #FFFF00;
       font-size: 1.1em;
     }
 .product-table tbody tr:nth-child(1) td:nth-child(1) {
-    background-color: #FF5722; /* Deep Orange */
-    color: #000000; /* Black Text */
+    background-color: #FF5722;
+    color: #000000;
 }
 .product-table tbody tr:nth-child(1) td:nth-child(2) {
-    background-color: #FFCCBC; /* Light Orange */
-    color: #880E4F; /* Deep Maroon Text */
+    background-color: #FFCCBC;
+    color: #880E4F;
 }
 .product-table tbody tr:nth-child(1) td:nth-child(3) {
-    background-color: #BF360C; /* Dark Orange */
-    color: #FFFFFF; /* White Text */
+    background-color: #BF360C;
+    color: #FFFFFF;
 }
 .product-table tbody tr:nth-child(1) td:nth-child(4) {
-    background-color: #E64A19; /* Medium Orange */
-    color: #00BCD4; /* Cyan Text */
+    background-color: #E64A19;
+    color: #00BCD4;
 }
 .product-table tbody tr:nth-child(2) td:nth-child(1) {
-    background-color: #009688; /* Teal */
-    color: #FF00FF; /* Magenta Text */
+    background-color: #009688;
+    color: #FF00FF;
 }
 .product-table tbody tr:nth-child(2) td:nth-child(2) {
-    background-color: #80CBC4; /* Light Teal */
-    color: #1A237E; /* Deep Indigo Text */
+    background-color: #80CBC4;
+    color: #1A237E;
 }
 .product-table tbody tr:nth-child(2) td:nth-child(3) {
-    background-color: #004D40; /* Dark Teal */
-    color: #FFEB3B; /* Bright Yellow Text */
+    background-color: #004D40;
+    color: #FFEB3B;
 }
 .product-table tbody tr:nth-child(2) td:nth-child(4) {
-    background-color: #4DB6AC; /* Medium Light Teal */
-    color: #E91E63; /* Pink Text */
+    background-color: #4DB6AC;
+    color: #E91E63;
 }
 .product-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #673AB7; /* Deep Purple */
-    color: #FF9800; /* Orange Text */
+    background-color: #673AB7;
+    color: #FF9800;
 }
 .product-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #B39DDB; /* Light Purple */
-    color: #000000; /* Black Text */
+    background-color: #B39DDB;
+    color: #000000;
 }
 .product-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #5E35B1; /* Dark Purple */
-    color: #00BCD4; /* Cyan Text */
+    background-color: #5E35B1;
+    color: #00BCD4;
 }
 .product-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #9575CD; /* Medium Purple */
-    color: #FFFFFF; /* White Text */
+    background-color: #9575CD;
+    color: #FFFFFF;
 }
 .farm-table {
       border: none; 
     }
 .farm-table thead {
-      background-color: #006064; /* Dark Cyan Header Background */
-      color: #FF0000; /* Unique Header Text Color: Red */
+      background-color: #006064;
+      color: #FF0000;
       font-size: 1.1em;
     }
 .farm-table tbody tr:nth-child(odd) td:nth-child(1) {
-    background-color: #C5E1A5; /* Light Green */
-    color: #33691E; /* Dark Olive Text */
+    background-color: #C5E1A5;
+    color: #33691E;
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(2) {
-    background-color: #AED581; /* Medium Light Green */
-    color: #000000; /* Black Text */
+    background-color: #AED581;
+    color: #000000;
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(3) {
-    background-color: #8BC34A; /* Primary Green */
-    color: #1A237E; /* Deep Indigo Text */
+    background-color: #8BC34A;
+    color: #1A237E;
     text-decoration: none !important; 
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(4) {
-    background-color: #689F38; /* Dark Green */
-    color: #FFFFFF; /* White Text */
+    background-color: #689F38;
+    color: #FFFFFF;
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(1) {
-    background-color: #B3E5FC; /* Light Blue */
-    color: #01579B; /* Darker Blue Text */
+    background-color: #B3E5FC;
+    color: #01579B;
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(2) {
-    background-color: #81D4FA; /* Medium Light Blue */
-    color: #FF9800; /* Orange Text */
+    background-color: #81D4FA;
+    color: #FF9800;
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(3) {
-    background-color: #4FC3F7; /* Primary Blue */
-    color: #000000; /* Black Text */
+    background-color: #4FC3F7;
+    color: #000000;
     text-decoration: none !important; 
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(4) {
-    background-color: #29B6F6; /* Medium Blue */
-    color: #FF00FF; /* Magenta Text */
+    background-color: #29B6F6;
+    color: #FF00FF;
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #FFCDD2; /* Light Red */
-    color: #D32F2F; /* Dark Red Text */
+    background-color: #FFCDD2;
+    color: #D32F2F;
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #EF9A9A; /* Medium Light Red */
-    color: #000000; /* Black Text */
+    background-color: #EF9A9A;
+    color: #000000;
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #E57373; /* Medium Red */
-    color: #009688; /* Teal Text */
+    background-color: #E57373;
+    color: #009688;
     text-decoration: none !important; 
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #EF5350; /* Bright Red */
-    color: #FFFF00; /* Yellow Text */
+    background-color: #EF5350;
+    color: #FFFF00;
 }
 .farm-table td:nth-child(3) a {
     text-decoration: none !important;
