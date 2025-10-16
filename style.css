@@ -1,178 +1,147 @@
-/* General Table Styling */
 table {
       width: 80%;
       border-collapse: collapse;
       margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Slightly more pronounced shadow */
-      border: none; /* Removing the general black border for a cleaner look */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+      border: none; 
     }
-
 caption {
       font-weight: bold;
       margin-bottom: 10px;
       text-align: left;
-      font-size: 1.2em; /* Slightly larger caption */
+      font-size: 1.2em; 
       color: #333;
     }
-
 th, td {
       padding: 12px 15px;
       text-align: left;
-      border: none !important; /* Ensure no borders interfere with cell colors */
+      border: none !important; 
     }
-
-/* --- Product Table Styling --- */
 .product-table {
       border: none; 
-      /* Using a vibrant color palette for a unique look */
     }
-
 .product-table thead {
-      background-color: #4A148C; /* Deep Purple Header Background */
-      color: #FFEB3B; /* Bright Yellow Header Text */
+      background-color: #4A148C; 
+      color: #00FFFF; 
       font-size: 1.1em;
     }
-
-/* Product Table Body - Unique colors for each cell */
-/* Row 1: Apples */
 .product-table tbody tr:nth-child(1) td:nth-child(1) {
-    background-color: #E91E63; /* Pink */
-    color: #FFEB3B; /* Bright Yellow Text */
+    background-color: #E91E63; 
+    color: #FFEB3B; 
 }
 .product-table tbody tr:nth-child(1) td:nth-child(2) {
-    background-color: #F06292; /* Lighter Pink */
-    color: #FFFFFF; /* White Text */
+    background-color: #F06292; 
+    color: #FFFFFF; 
 }
 .product-table tbody tr:nth-child(1) td:nth-child(3) {
-    background-color: #C2185B; /* Darker Pink */
-    color: #CFD8DC; /* Light Gray Text */
+    background-color: #C2185B; 
+    color: #CFD8DC; 
 }
 .product-table tbody tr:nth-child(1) td:nth-child(4) {
-    background-color: #880E4F; /* Deepest Pink */
-    color: #000000; /* Black Text */
+    background-color: #880E4F; 
+    color: #000000; 
 }
-
-/* Row 2: Oranges */
 .product-table tbody tr:nth-child(2) td:nth-child(1) {
-    background-color: #00BCD4; /* Cyan */
-    color: #4A148C; /* Deep Purple Text */
+    background-color: #00BCD4; 
+    color: #4A148C; 
 }
 .product-table tbody tr:nth-child(2) td:nth-child(2) {
-    background-color: #4DD0E1; /* Lighter Cyan */
-    color: #FF9800; /* Orange Text */
+    background-color: #4DD0E1; 
+    color: #FF9800; 
 }
 .product-table tbody tr:nth-child(2) td:nth-child(3) {
-    background-color: #0097A7; /* Darker Cyan */
-    color: #FFEB3B; /* Bright Yellow Text */
+    background-color: #0097A7; 
+    color: #FFEB3B; 
 }
 .product-table tbody tr:nth-child(2) td:nth-child(4) {
-    background-color: #006064; /* Deepest Cyan */
-    color: #E91E63; /* Pink Text */
+    background-color: #006064; 
+    color: #E91E63; 
 }
-
-/* Row 3: Bananas */
 .product-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #FF9800; /* Orange */
-    color: #4A148C; /* Deep Purple Text */
+    background-color: #FF9800; 
+    color: #4A148C; 
 }
 .product-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #FFB74D; /* Lighter Orange */
-    color: #000000; /* Black Text */
+    background-color: #FFB74D; 
+    color: #000000; 
 }
 .product-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #FB8C00; /* Darker Orange */
-    color: #00BCD4; /* Cyan Text */
+    background-color: #FB8C00; 
+    color: #00BCD4; 
 }
 .product-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #E65100; /* Deepest Orange */
-    color: #FFFFFF; /* White Text */
+    background-color: #E65100; 
+    color: #FFFFFF; 
 }
-
-/* --- Farm Table Styling --- */
 .farm-table {
-      border: none; /* Removing the table border */
+      border: none; 
     }
-
 .farm-table thead {
-      background-color: #388E3C; /* Dark Green Header Background */
-      color: #FFFFFF; /* White Header Text */
+      background-color: #388E3C; 
+      color: #FF00FF; 
       font-size: 1.1em;
     }
-
-/* Farm Table Body - Unique colors for each cell */
-/* Row 1: Marks (Odd) */
 .farm-table tbody tr:nth-child(odd) td:nth-child(1) {
-    background-color: #A5D6A7; /* Light Green */
-    color: #388E3C; /* Dark Green Text */
+    background-color: #A5D6A7; 
+    color: #388E3C; 
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(2) {
-    background-color: #81C784; /* Medium Green */
-    color: #000000; /* Black Text */
+    background-color: #81C784; 
+    color: #000000; 
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(3) {
-    background-color: #4CAF50; /* Primary Green */
-    color: #FFEB3B; /* Bright Yellow Text */
-    text-decoration: none; /* REMOVE UNDERLINE */
+    background-color: #4CAF50; 
+    color: #FFEB3B; 
+    text-decoration: none; 
 }
 .farm-table tbody tr:nth-child(odd) td:nth-child(4) {
-    background-color: #388E3C; /* Dark Green */
-    color: #FFFFFF; /* White Text */
+    background-color: #388E3C; 
+    color: #FFFFFF; 
 }
-
-/* Row 2: James (Even) */
 .farm-table tbody tr:nth-child(even) td:nth-child(1) {
-    background-color: #64B5F6; /* Light Blue */
-    color: #1565C0; /* Dark Blue Text */
+    background-color: #64B5F6; 
+    color: #1565C0; 
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(2) {
-    background-color: #42A5F5; /* Medium Blue */
-    color: #FF9800; /* Orange Text */
+    background-color: #42A5F5; 
+    color: #FF9800; 
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(3) {
-    background-color: #2196F3; /* Primary Blue */
-    color: #000000; /* Black Text */
-    text-decoration: none; /* REMOVE UNDERLINE */
+    background-color: #2196F3; 
+    color: #000000; 
+    text-decoration: none; 
 }
 .farm-table tbody tr:nth-child(even) td:nth-child(4) {
-    background-color: #1976D2; /* Dark Blue */
-    color: #FFEB3B; /* Bright Yellow Text */
+    background-color: #1976D2; 
+    color: #FFEB3B; 
 }
-
-/* Row 3: Marys (Odd) */
 .farm-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #A5D6A7; /* Light Green */
-    color: #4A148C; /* Deep Purple Text */
+    background-color: #A5D6A7; 
+    color: #4A148C; 
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #81C784; /* Medium Green */
-    color: #E91E63; /* Pink Text */
+    background-color: #81C784; 
+    color: #E91E63; 
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #4CAF50; /* Primary Green */
-    color: #00BCD4; /* Cyan Text */
-    text-decoration: none; /* REMOVE UNDERLINE */
+    background-color: #4CAF50; 
+    color: #00BCD4; 
+    text-decoration: none; 
 }
 .farm-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #388E3C; /* Dark Green */
-    color: #CFD8DC; /* Light Gray Text */
+    background-color: #388E3C; 
+    color: #CFD8DC; 
 }
-
-/* Specific styling for the Contacts column to remove underline on the link */
-/* Assuming the contact number is wrapped in an anchor tag <a> inside the <td> */
 .farm-table td:nth-child(3) a {
     text-decoration: none;
-    color: inherit; /* Inherit the color from the cell */
+    color: inherit; 
 }
-
-/* Remove borders from the farm table cells as per original request */
 .farm-table td {
       border: none; 
     }
-
 .farm-table tbody tr:last-child td {
       border-bottom: none; 
     }
-
 .farm-table td:last-child {
       border-right: none; 
     }
