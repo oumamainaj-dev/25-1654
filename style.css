@@ -4,7 +4,7 @@ table {
       margin-bottom: 30px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
       border: none; 
-      background-color: #F0F0F0; /* Light Gray Table Background */
+      background-color: #F0F0F0;
     }
 caption {
       font-weight: bold;
