@@ -1,91 +1,84 @@
 table {
-  width: 80%;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border: 1px solid #000; 
-}
+      width: 80%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid #000; 
+    }
 
-caption {
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 1.1em;
-}
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 1.1em;
+    }
 
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-}
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
 
-.product-table {
-  border: none; 
-}
+    }
 
-.product-table thead {
-  background-color: #ff6f61; 
-  color: #6b5b95; 
-}
+    .product-table {
+      border: none; 
+    }
 
-.product-table th {
-  border: none; 
-  background-color: #88b04b;
-  color: #f7cac9;
-}
+    .product-table thead {
+      background-color: #6a799c; 
+      color: #ff9933; 
+    }
 
-.product-table tbody tr:nth-child(1) {
-  background-color: #92a8d1; 
-}
+    .product-table th {
+      border: none; 
+    }
 
-.product-table tbody tr:nth-child(2) {
-  background-color: #955251; 
-}
+    .product-table tbody tr:nth-child(1) {
+      background-color: #e6f0ff; 
+    }
 
-.product-table tbody tr:nth-child(3) {
-  background-color: #b565a7; 
-  color: #fff; 
-}
+    .product-table tbody tr:nth-child(2) {
+      background-color: #00cccc; 
+    }
 
-.product-table td {
-  border: none; 
-  background-color: #009b77;
-  color: #fff;
-}
+    .product-table tbody tr:nth-child(3) {
+      background-color: #336699; 
+      color: white; 
+    }
 
-.farm-table {
-  border: 1px solid #dd4124; 
-}
+    .product-table td {
+      border: none; 
+    }
 
-.farm-table thead {
-  background-color: #d65076; 
-  color: #fff;
-}
+    .farm-table {
+      border: 1px solid #00cccc; 
+    }
 
-.farm-table th {
-  border: none; 
-  background-color: #45b8ac;
-  color: #fff;
-}
+    .farm-table thead {
+      background-color: #006699; 
+      color: white;
+    }
 
-.farm-table tbody tr:nth-child(odd) {
-  background-color: #e0b589; 
-}
+    .farm-table th {
+      border: none; 
+    }
 
-.farm-table tbody tr:nth-child(even) {
-  background-color: #5b5ea6; 
-}
+    .farm-table tbody tr:nth-child(odd) {
+      background-color: #e6f0ff; 
+    }
 
-.farm-table td {
-  border-right: 1px solid #dd4124; 
-  border-bottom: 1px solid #dd4124; 
-  background-color: #9b2335;
-  color: #fff;
-}
+    .farm-table tbody tr:nth-child(even) {
+      background-color: #cce0ff; 
+    }
 
-.farm-table tbody tr:last-child td {
-  border-bottom: none; 
-}
+    .farm-table td {
+      border-right: 1px solid #00cccc; 
+      border-bottom: 1px solid #00cccc; 
+    }
 
-.farm-table td:last-child {
-  border-right: none; 
-}
+    .farm-table tbody tr:last-child td {
+      border-bottom: none; 
+    }
+
+    .farm-table td:last-child {
+      border-right: none; 
+    }
