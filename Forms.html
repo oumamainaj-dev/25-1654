@@ -23,4 +23,55 @@
     <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
   </fieldset>
 </form>
+<br>
+<form id="loginForm">
+  <fieldset>
+    <legend> Secure Login</legend>
 
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+    <label>
+      <input type="checkbox" name="remember"> Remember Me
+    </label>
+  </fieldset>
+</form>
+<br>
+<form id="calculatorForm">
+  <fieldset>
+    <legend>Simple Calculator</legend>
+
+    <input type="number" id="num1" name="num1" placeholder="First number" required>
+    <select id="operator" name="operator">
+      <option value="+">+</option>
+      <option value="-">−</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="number" id="num2" name="num2" placeholder="Second number" required>
+
+    <button type="button" onclick="calculate()">Calculate</button>
+    <p id="result">Result: <span></span></p>
+  </fieldset>
+</form>
+
+<script>
+  function calculate() {
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const operator = document.getElementById('operator').value;
+    let result;
+
+    switch (operator) {
+      case '+': result = num1 + num2; break;
+      case '-': result = num1 - num2; break;
+      case '*': result = num1 * num2; break;
+      case '/': result = num2 !== 0 ? num1 / num2 : 'Error: Divide by zero'; break;
+    }
+
+    document.querySelector('#result span').textContent = result;
+  }
+</script>
