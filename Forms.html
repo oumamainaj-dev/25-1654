@@ -44,16 +44,19 @@
   <fieldset>
     <legend>Simple Calculator</legend>
 
-    <input type="number" id="num1" name="num1" placeholder="First number" required>
+    <input type="number" id="num1" name="num1" placeholder="First number" required><br><br>
+
     <select id="operator" name="operator">
       <option value="+">+</option>
       <option value="-">−</option>
       <option value="*">×</option>
       <option value="/">÷</option>
-    </select>
-    <input type="number" id="num2" name="num2" placeholder="Second number" required>
+    </select><br><br>
 
-    <button type="button" onclick="calculate()">Calculate</button>
+    <input type="number" id="num2" name="num2" placeholder="Second number" required><br><br>
+
+    <button type="button" onclick="calculate()">Calculate</button><br><br>
+
     <p id="result">Result: <span></span></p>
   </fieldset>
 </form>
@@ -75,6 +78,7 @@
     document.querySelector('#result span').textContent = result;
   }
 </script>
+
 <br>
   <form>
   <h2>Sign Up</h2>
