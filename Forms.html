@@ -1,9 +1,9 @@
 <form id="surveyForm">
   <fieldset>
-    <legend> Quick Feedback Survey</legend>
+    <legend>Quick Feedback Survey</legend>
 
     <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="e.g., Justin" required><br>
+    <input type="text" id="name" name="name" placeholder="e.g., Justin" required><br><br>
 
     <label for="experience">How was your experience?</label><br>
     <select id="experience" name="experience">
@@ -11,15 +11,15 @@
       <option value="good">Good</option>
       <option value="average">Average</option>
       <option value="poor">Poor</option>
-    </select>
-<br>
-    <label>Would you recommend us?</label><br>
-    <input type="radio" id="yes" name="recommend" value="yes"><br>
-    <label for="yes">Yes</label><br>
-    <input type="radio" id="no" name="recommend" value="no"><br>
-    <label for="no">No</label>
+    </select><br><br>
 
-    <label for="comments">Additional Comments:</label><br
+    <label>Would you recommend us?</label><br>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label><br><br>
+
+    <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
   </fieldset>
 </form>
@@ -28,14 +28,14 @@
   <fieldset>
     <legend> Secure Login</legend>
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="••••••••" required>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="••••••••" required><br>
 
-    <label>
-      <input type="checkbox" name="remember"> Remember Me
+    <label><br>
+      <input type="checkbox" name="remember"> Remember Me<br>
     </label>
   </fieldset>
 </form>
