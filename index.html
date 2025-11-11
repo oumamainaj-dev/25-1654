@@ -30,6 +30,71 @@
       flex-wrap: wrap;
     }
 
+
+    .intro-section {
+      display: flex;
+      gap: 30px; 
+      margin-bottom: 30px;
+    }
+
+    .intro-section article {
+      flex: 3; 
+    }
+
+    .intro-section aside {
+      flex: 1; 
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+    main > section:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr; 
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: left;
+    }
+
+    .footer-content h2 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .calc {
+      margin-top: 0; 
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    .calc input {
+      width: 90%; 
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px 0; 
+    }
+
     header h1 {
       margin: 0;
       color: red;
@@ -52,9 +117,7 @@
       padding: 20px;
     }
 
-    section {
-      margin-bottom: 30px;
-    }
+
 
     img {
       max-width: 100%;
@@ -65,8 +128,8 @@
       color: #333;
       margin-top: 40px;
     }
-.vehicle-table {
-  width: 80%;
+    .vehicle-table {
+  width: 100%; 
   border-collapse: collapse;
   margin-bottom: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -147,6 +210,25 @@
       background-color: green;
     }
 
+
+
+
+    @media (max-width: 992px) {
+      .footer-content {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+      }
+
+      .calc {
+        margin-top: 20px;
+      }
+
+      .vehicle-table {
+        width: 95%;
+      }
+    }
+
+
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -157,6 +239,25 @@
         margin-top: 10px;
       }
 
+      
+      .intro-section {
+        flex-direction: column;
+      }
+
+      .intro-section aside {
+        margin-top: 20px;
+      }
+
+      
+      .table-container {
+        overflow-x: auto;
+      }
+
+      .vehicle-table {
+        width: 600px; 
+      }
+
+      
       body {
         background-color: lightblue;
       }
@@ -177,9 +278,8 @@
   </header>
 
   <main>
-    <section>
-      <article>
-        <p>Welcome to Tesco Auto Dealers, your trusted source for new, used, and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options, and expert support to help you drive away with confidence.</p>
+    <section class="intro-section">
+      <article>        <p>Welcome to Tesco Auto Dealers, your trusted source for new, used, and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options, and expert support to help you drive away with confidence.</p>
         <h2>Our Services</h2>
         <ul>
           <li>New Car Models</li>
@@ -200,7 +300,8 @@
 
    <section>
   <h2>Vehicle Catalogue</h2>
-  <table class="vehicle-table">
+  <div class="table-container">
+    <table class="vehicle-table">
     <caption>Car Brand Comparison</caption>
     <thead>
       <tr>
@@ -232,6 +333,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </section>
     <section>
       <h2>Buying Versus Leasing a Car</h2>
@@ -241,21 +343,26 @@
   </main>
 
   <footer>
-    <p>
-      Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a><br>
-      Phone: +254 711 610 299 / +254 700 200 200<br>
-      Email: <a href="mailto:info@tescoautodealers.ac.ke" style="color: red; text-decoration: none;">info@tescoautodealers.ac.ke</a>
-    </p>
-    <p>&copy; 2025 Tesco Auto Dealers. All rights reserved.</p>
-
-    <div class="calc">
-      <h2>Monthly Car Payments Calculator</h2>
-      <p><input type="text" id="amount" placeholder="Loan Amount (KES)"></p>
-      <p><input type="text" id="months" placeholder="Additional Months"></p>
-      <p><input type="text" id="years" placeholder="Years"></p>
-      <p><input type="text" id="interest" placeholder="Interest Rate (%)"></p>
-      <p><button class="btn" onclick="calculatePayment()">Calculate</button></p>
-      <p id="output">Monthly Payment: --</p>
+    <div class="footer-content">
+      <div class="contact-info">
+        <p>
+          Contact us: <a href="http://www.tescoautodealers.com" style="color: red; text-decoration: none;">www.tescoautodealers.com</a><br>
+          Phone: +254 711 610 299 / +254 700 200 200<br>
+          Email: <a href="mailto:info@tescoautodealers.ac.ke" style="color: red; text-decoration: none;">info@tescoautodealers.ac.ke</a>
+        </p>
+        <p>&copy; 2025 Tesco Auto Dealers. All rights reserved.</p>
+      </div>
+      <div class="calc">
+        <h2>Monthly Car Payments Calculator</h2>
+        <p><input type="text" id="amount" placeholder="Loan Amount (KES)"></p>
+        <p><input type="text" id="months" placeholder="Additional Months"></p>
+        <p><input type="text" id="years" placeholder="Years"></p>
+        <p><input type="text" id="interest" placeholder="Interest Rate (%)"></p>
+        <p><button class="btn" onclick="calculatePayment()">Calculate</button></p>
+        <p id="output">Monthly Payment: --</p>
+      </div>
+    </div>
+      </div>
     </div>
 
     <script>
@@ -280,6 +387,3 @@
 
 </body>
 </html>
-
-
-
