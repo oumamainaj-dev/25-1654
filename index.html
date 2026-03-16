@@ -3,283 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Tesco Auto Dealers</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    body {
-      background-image: url('https://image2url.com/images/1759046062871-28b1d807-dba0-472d-8b3f-9735611a5a9f.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-
-    header {
-      background-color: rgb(253, 218, 13);
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-
-    .intro-section {
-      display: flex;
-      gap: 30px; 
-      margin-bottom: 30px;
-    }
-
-    .intro-section article {
-      flex: 3; 
-    }
-
-    .intro-section aside {
-      flex: 1; 
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-
-    main > section:nth-child(2) {
-      display: flex;
-      justify-content: center;
-    }
-
-
-    .footer-content {
-      display: grid;
-      grid-template-columns: 2fr 1fr; 
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 0;
-      text-align: left;
-    }
-
-    .footer-content h2 {
-      margin-top: 0;
-      color: white;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .calc {
-      margin-top: 0; 
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-    }
-
-    .calc input {
-      width: 90%; 
-    }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.85);
-      color: white;
-      text-align: center;
-      padding: 15px 0; 
-    }
-
-    header h1 {
-      margin: 0;
-      color: red;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      background-color: rgba(250, 249, 246, 0.95);
-      padding: 20px;
-    }
-
-
-
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #333;
-      margin-top: 40px;
-    }
-    .vehicle-table {
-  width: 100%; 
-  border-collapse: collapse;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border: 1px solid #444;
-  font-family: Arial, sans-serif;
-}
-
-.vehicle-table caption {
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.vehicle-table thead {
-  background-color: #2c3e50;
-  color: #f1c40f;
-}
-
-.vehicle-table th,
-.vehicle-table td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-}
-
-.vehicle-table tbody tr:nth-child(odd) {
-  background-color: #ecf0f1;
-}
-
-.vehicle-table tbody tr:nth-child(even) {
-  background-color: #dfe6e9;
-}
-
-.vehicle-table tbody tr:hover {
-  background-color: #b2bec3;
-}
-
-.vehicle-table td:last-child {
-  font-size: 1.2em;
-  color: #e67e22;
-}
-
-    iframe {
-      display: block;
-      margin: 20px auto;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: rgba(0, 0, 0, 0.85);
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    .calc {
-      margin-top: 20px;
-    }
-
-    .calc input {
-      padding: 8px;
-      margin: 5px;
-      width: 200px;
-    }
-
-    .btn {
-      background-color: blue;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.5s ease;
-    }
-
-    .btn:hover {
-      background-color: green;
-    }
-
-
-
-
-    @media (max-width: 992px) {
-      .footer-content {
-        grid-template-columns: 1fr; 
-        padding: 20px;
-      }
-
-      .calc {
-        margin-top: 20px;
-      }
-
-      .vehicle-table {
-        width: 95%;
-      }
-    }
-
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      
-      .intro-section {
-        flex-direction: column;
-      }
-
-      .intro-section aside {
-        margin-top: 20px;
-      }
-
-      
-      .table-container {
-        overflow-x: auto;
-      }
-
-      .vehicle-table {
-        width: 600px; 
-      }
-
-      
-      body {
-        background-color: lightblue;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h2 class="form-title">Sign In</h2>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required placeholder="Enter your password">
+        </div>
+        <p id="loginError" class="error-msg"></p>
+        <button type="submit" class="form-btn">Sign In</button>
+      </form>
+      <div class="form-switch">
+        <p>Don't have an account? <a onclick="switchModal('loginModal', 'signupModal')">Create Account</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('signupModal')">&times;</span>
+      <h2 class="form-title">Create Account</h2>
+      <form id="signupForm" onsubmit="handleSignup(event)">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required placeholder="Create a password" minlength="6">
+        </div>
+        <div class="form-group">
+          <label for="signupConfirm">Confirm Password</label>
+          <input type="password" id="signupConfirm" required placeholder="Confirm your password">
+        </div>
+        <div class="form-group">
+          <label for="signupPhone">Phone Number</label>
+          <input type="tel" id="signupPhone" required placeholder="Enter your phone number">
+        </div>
+        <p id="signupError" class="error-msg"></p>
+        <p id="signupSuccess" class="success-msg"></p>
+        <button type="submit" class="form-btn">Create Account</button>
+      </form>
+      <div class="form-switch">
+        <p>Already have an account? <a onclick="switchModal('signupModal', 'loginModal')">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
   <header>
     <h1>Tesco Auto Dealers</h1>
+    <div class="user-info" id="userInfo">
+      <span id="userName"></span>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Catalogue</a>
       <a href="#">Lease Options</a>
       <a href="#">About Us</a>
+      <a href="#" class="auth-link" id="authLink" onclick="openAuthModal()">Sign In</a>
       <a href="https://github.com/oumamainaj-dev/" target="_blank">GitHub</a>
     </nav>
   </header>
 
   <main>
     <section class="intro-section">
-      <article>        <p>Welcome to Tesco Auto Dealers, your trusted source for new, used, and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options, and expert support to help you drive away with confidence.</p>
+      <article>        
+        <p>Welcome to Tesco Auto Dealers, your trusted source for new, used, and leased vehicles. We offer a wide variety of vehicle models from top brands, flexible payment options, and expert support to help you drive away with confidence.</p>
         <h2>Our Services</h2>
         <ul>
           <li>New Car Models</li>
@@ -298,43 +102,44 @@
       </aside>
     </section>
 
-   <section>
-  <h2>Vehicle Catalogue</h2>
-  <div class="table-container">
-    <table class="vehicle-table">
-    <caption>Car Brand Comparison</caption>
-    <thead>
-      <tr>
-        <th>Brand Name</th>
-        <th>Price (KES)</th>
-        <th>Safety Rating</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Volvo XC90</td>
-        <td>10,500,000</td>
-        <td>★★★★★</td>
-      </tr>
-      <tr>
-        <td>Nissan Patrol</td>
-        <td>9,800,000</td>
-        <td>★★★★☆</td>
-      </tr>
-      <tr>
-        <td>Toyota RAV4</td>
-        <td>5,200,000</td>
-        <td>★★★★★</td>
-      </tr>
-      <tr>
-        <td>Mercedes GLE 450</td>
-        <td>15,980,000</td>
-        <td>★★★★★</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-</section>
+    <section>
+      <h2>Vehicle Catalogue</h2>
+      <div class="table-container">
+        <table class="vehicle-table">
+          <caption>Car Brand Comparison</caption>
+          <thead>
+            <tr>
+              <th>Brand Name</th>
+              <th>Price (KES)</th>
+              <th>Safety Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Volvo XC90</td>
+              <td>10,500,000</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>Nissan Patrol</td>
+              <td>9,800,000</td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>Toyota RAV4</td>
+              <td>5,200,000</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>Mercedes GLE 450</td>
+              <td>15,980,000</td>
+              <td>★★★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
     <section>
       <h2>Buying Versus Leasing a Car</h2>
       <p>This video explains the differences between buying, leasing, and financing a vehicle. It covers pros and cons, cost comparisons, and tips to help you choose the best option for your lifestyle and budget.</p>
@@ -362,27 +167,8 @@
         <p id="output">Monthly Payment: --</p>
       </div>
     </div>
-      </div>
-    </div>
 
-    <script>
-      function calculatePayment() {
-        const amount = parseFloat(document.getElementById("amount").value);
-        const months = parseFloat(document.getElementById("months").value);
-        const years = parseFloat(document.getElementById("years").value);
-        const interest = parseFloat(document.getElementById("interest").value) / 100;
-
-        const totalMonths = months + (years * 12);
-        if (isNaN(amount) || isNaN(totalMonths) || isNaN(interest)) {
-          document.getElementById("output").innerText = "Please enter valid numbers.";
-          return;
-        }
-
-        const monthlyRate = interest / 12;
-        const payment = (amount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -totalMonths));
-        document.getElementById("output").innerText = `Monthly Payment: KES ${payment.toFixed(2)}`;
-      }
-    </script>
+    <script src="script.js"></script>
   </footer>
 
 </body>
