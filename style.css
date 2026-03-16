@@ -1,148 +1,392 @@
-table {
-      width: 80%;
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    body {
+      background-image: url('https://image2url.com/images/1759046062871-28b1d807-dba0-472d-8b3f-9735611a5a9f.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgb(253, 218, 13);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .intro-section {
+      display: flex;
+      gap: 30px; 
+      margin-bottom: 30px;
+    }
+
+    .intro-section article {
+      flex: 3; 
+    }
+
+    .intro-section aside {
+      flex: 1; 
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    main > section:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr; 
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: left;
+    }
+
+    .footer-content h2 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .calc {
+      margin-top: 0; 
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    .calc input {
+      width: 90%; 
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px 0; 
+    }
+
+    header h1 {
+      margin: 0;
+      color: red;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.auth-link {
+      background-color: red;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    nav a.auth-link:hover {
+      background-color: darkred;
+      text-decoration: none;
+    }
+
+    main {
+      background-color: rgba(250, 249, 246, 0.95);
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
+
+    .vehicle-table {
+      width: 100%; 
       border-collapse: collapse;
       margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-      border: none; 
-      background-color: #F0F0F0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      border: 1px solid #444;
+      font-family: Arial, sans-serif;
     }
-caption {
+
+    .vehicle-table caption {
       font-weight: bold;
       margin-bottom: 10px;
       text-align: left;
-      font-size: 1.2em; 
+      font-size: 1.2em;
       color: #333;
     }
-th, td {
+
+    .vehicle-table thead {
+      background-color: #2c3e50;
+      color: #f1c40f;
+    }
+
+    .vehicle-table th,
+    .vehicle-table td {
       padding: 12px 15px;
       text-align: left;
-      border: none !important; 
+      border-bottom: 1px solid #ccc;
     }
-.product-table {
-      border: none; 
+
+    .vehicle-table tbody tr:nth-child(odd) {
+      background-color: #ecf0f1;
     }
-.product-table thead {
-      background-color: #1A237E;
-      color: #FFFF00;
-      font-size: 1.1em;
+
+    .vehicle-table tbody tr:nth-child(even) {
+      background-color: #dfe6e9;
     }
-.product-table tbody tr:nth-child(1) td:nth-child(1) {
-    background-color: #FF5722;
-    color: #000000;
-}
-.product-table tbody tr:nth-child(1) td:nth-child(2) {
-    background-color: #FFCCBC;
-    color: #880E4F;
-}
-.product-table tbody tr:nth-child(1) td:nth-child(3) {
-    background-color: #BF360C;
-    color: #FFFFFF;
-}
-.product-table tbody tr:nth-child(1) td:nth-child(4) {
-    background-color: #E64A19;
-    color: #00BCD4;
-}
-.product-table tbody tr:nth-child(2) td:nth-child(1) {
-    background-color: #009688;
-    color: #FF00FF;
-}
-.product-table tbody tr:nth-child(2) td:nth-child(2) {
-    background-color: #80CBC4;
-    color: #1A237E;
-}
-.product-table tbody tr:nth-child(2) td:nth-child(3) {
-    background-color: #004D40;
-    color: #FFEB3B;
-}
-.product-table tbody tr:nth-child(2) td:nth-child(4) {
-    background-color: #4DB6AC;
-    color: #E91E63;
-}
-.product-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #673AB7;
-    color: #FF9800;
-}
-.product-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #B39DDB;
-    color: #000000;
-}
-.product-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #5E35B1;
-    color: #00BCD4;
-}
-.product-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #9575CD;
-    color: #FFFFFF;
-}
-.farm-table {
-      border: none; 
+
+    .vehicle-table tbody tr:hover {
+      background-color: #b2bec3;
     }
-.farm-table thead {
-      background-color: #006064;
-      color: #FF0000;
-      font-size: 1.1em;
+
+    .vehicle-table td:last-child {
+      font-size: 1.2em;
+      color: #e67e22;
     }
-.farm-table tbody tr:nth-child(odd) td:nth-child(1) {
-    background-color: #C5E1A5;
-    color: #33691E;
-}
-.farm-table tbody tr:nth-child(odd) td:nth-child(2) {
-    background-color: #AED581;
-    color: #000000;
-}
-.farm-table tbody tr:nth-child(odd) td:nth-child(3) {
-    background-color: #8BC34A;
-    color: #1A237E;
-    text-decoration: none !important; 
-}
-.farm-table tbody tr:nth-child(odd) td:nth-child(4) {
-    background-color: #689F38;
-    color: #FFFFFF;
-}
-.farm-table tbody tr:nth-child(even) td:nth-child(1) {
-    background-color: #B3E5FC;
-    color: #01579B;
-}
-.farm-table tbody tr:nth-child(even) td:nth-child(2) {
-    background-color: #81D4FA;
-    color: #FF9800;
-}
-.farm-table tbody tr:nth-child(even) td:nth-child(3) {
-    background-color: #4FC3F7;
-    color: #000000;
-    text-decoration: none !important; 
-}
-.farm-table tbody tr:nth-child(even) td:nth-child(4) {
-    background-color: #29B6F6;
-    color: #FF00FF;
-}
-.farm-table tbody tr:nth-child(3) td:nth-child(1) {
-    background-color: #FFCDD2;
-    color: #D32F2F;
-}
-.farm-table tbody tr:nth-child(3) td:nth-child(2) {
-    background-color: #EF9A9A;
-    color: #000000;
-}
-.farm-table tbody tr:nth-child(3) td:nth-child(3) {
-    background-color: #E57373;
-    color: #009688;
-    text-decoration: none !important; 
-}
-.farm-table tbody tr:nth-child(3) td:nth-child(4) {
-    background-color: #EF5350;
-    color: #FFFF00;
-}
-.farm-table td:nth-child(3) a {
-    text-decoration: none !important;
-    color: inherit; 
-}
-.farm-table td {
-      border: none; 
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
     }
-.farm-table tbody tr:last-child td {
-      border-bottom: none; 
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 15px;
     }
-.farm-table td:last-child {
-      border-right: none; 
+
+    .calc {
+      margin-top: 20px;
     }
+
+    .calc input {
+      padding: 8px;
+      margin: 5px;
+      width: 200px;
+    }
+
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+
+    .btn:hover {
+      background-color: green;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .close {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: red;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: blue;
+    }
+
+    .form-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .form-btn:hover {
+      background-color: darkred;
+    }
+
+    .form-switch {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .form-switch a {
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .form-switch a:hover {
+      color: darkblue;
+    }
+
+    .form-title {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .error-msg {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    .success-msg {
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+      text-align: center;
+    }
+
+    .user-info {
+      display: none;
+      color: white;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-info span {
+      font-weight: bold;
+    }
+
+    .logout-btn {
+      background-color: red;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 992px) {
+      .footer-content {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+      }
+
+      .calc {
+        margin-top: 20px;
+      }
+
+      .vehicle-table {
+        width: 95%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .intro-section {
+        flex-direction: column;
+      }
+
+      .intro-section aside {
+        margin-top: 20px;
+      }
+
+      .table-container {
+        overflow-x: auto;
+      }
+
+      .vehicle-table {
+        width: 600px; 
+      }
+
+      body {
+        background-color: lightblue;
+      }
+    }
+
+
